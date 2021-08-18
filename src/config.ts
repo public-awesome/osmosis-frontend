@@ -74,7 +74,7 @@ export const ExtraGaugeInPool: {
 } = {};
 
 export const PoolsPerPage = 10;
-export const RewardEpochIdentifier = 'day';
+export const RewardEpochIdentifier = '15min';
 
 /**
  * Determine the channel info per the chain.
@@ -90,8 +90,8 @@ export const IBCAssetInfos: {
 }[] = [
 	{
 		counterpartyChainId: 'cygnusx-1',
-		sourceChannelId: 'channel-0',
-		destChannelId: 'channel-141',
+		sourceChannelId: 'channel-1',
+		destChannelId: 'channel-1',
 		coinMinimalDenom: 'ustarx',
 	},
 ];
