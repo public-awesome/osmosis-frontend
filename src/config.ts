@@ -101,7 +101,7 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 		rpc: 'https://osmosis-rpc.cygnusx-1.publicawesome.dev',
 		rest: 'https://osmosis-rest.cygnusx-1.publicawesome.dev',
 		chainId: 'cygnusx-osmo-1',
-		chainName: 'Osmosis',
+		chainName: 'Stargze Osmosis Testnet',
 		stakeCurrency: {
 			coinDenom: 'OSMOX',
 			coinMinimalDenom: 'uosmox',
@@ -137,13 +137,13 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 	{
 		rpc: 'https://rpc.cygnusx-1.publicawesome.dev',
 		rest: 'https://rest.cygnusx-1.publicawesome.dev',
-		chainId: 'cosmoshub-4',
-		chainName: 'Cosmos Hub',
+		chainId: 'cygnusx-1',
+		chainName: 'Stargaze Testnet',
 		stakeCurrency: {
-			coinDenom: 'ATOM',
-			coinMinimalDenom: 'uatom',
+			coinDenom: 'STARX',
+			coinMinimalDenom: 'ustarx',
 			coinDecimals: 6,
-			coinGeckoId: 'cosmos',
+			coinGeckoId: 'stars',
 			coinImageUrl: window.location.origin + '/public/assets/tokens/cosmos.svg',
 		},
 		bip44: {
@@ -153,9 +153,9 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 		currencies: [
 			{
 				coinDenom: 'STARX',
-				coinMinimalDenom: 'ustarsx',
+				coinMinimalDenom: 'ustarx',
 				coinDecimals: 6,
-				coinGeckoId: 'cosmos',
+				coinGeckoId: 'stars',
 				coinImageUrl: window.location.origin + '/public/assets/tokens/cosmos.svg',
 			},
 		],
@@ -164,7 +164,7 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 				coinDenom: 'STARX',
 				coinMinimalDenom: 'ustarx',
 				coinDecimals: 6,
-				coinGeckoId: 'cosmos',
+				coinGeckoId: 'stars',
 				coinImageUrl: window.location.origin + '/public/assets/tokens/cosmos.svg',
 			},
 		],
