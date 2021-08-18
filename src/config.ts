@@ -138,7 +138,7 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 		rpc: 'https://rpc.cygnusx-1.publicawesome.dev',
 		rest: 'https://rest.cygnusx-1.publicawesome.dev',
 		chainId: 'cygnusx-1',
-		chainName: 'Stargaze Testnet',
+		chainName: 'Stargaze Cygnusx-1 Testnet',
 		stakeCurrency: {
 			coinDenom: 'STARX',
 			coinMinimalDenom: 'ustarx',
