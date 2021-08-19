@@ -104,25 +104,11 @@ export class RootStore {
 			this.queriesStore.get(EmbedChainInfos[0].chainId).osmosis.queryGammPools,
 			[
 				{
-					alternativeCoinId: 'pool:uosmo',
-					poolId: '1',
-					spotPriceSourceDenom: 'uosmo',
-					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-					destCoinId: 'cosmos',
-				},
-				{
-					alternativeCoinId: 'pool:uion',
-					poolId: '2',
-					spotPriceSourceDenom: 'uion',
-					spotPriceDestDenom: 'uosmo',
-					destCoinId: 'pool:uosmo',
-				},
-				{
-					alternativeCoinId: 'pool:uregen',
-					poolId: '21',
-					spotPriceSourceDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-8' }], 'uregen'),
-					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-					destCoinId: 'cosmos',
+					alternativeCoinId: 'osmosis',
+					poolId: '6',
+					spotPriceSourceDenom: 'uosmox',
+					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
+					destCoinId: 'pool:ustarx',
 				},
 			]
 		);
@@ -134,16 +120,16 @@ export class RootStore {
 
 		this.swapManager = new GammSwapManager([
 			{
-				poolId: '1',
+				poolId: '6',
 				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
-						coinDenom: 'STARX',
-						coinDecimals: 6,
-					},
 					{
 						coinMinimalDenom: 'uosmox',
 						coinDenom: 'OSMOX',
+						coinDecimals: 6,
+					},
+					{
+						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
+						coinDenom: 'STARX',
 						coinDecimals: 6,
 					},
 				],
