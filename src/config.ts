@@ -37,7 +37,7 @@ export const PromotedLBPPoolIds: {
 	destDenom: string;
 }[] = [
 	{
-		poolId: '6',
+		poolId: '8',
 		name: 'Stargaze',
 		baseDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
 		destDenom: 'uosmox',
