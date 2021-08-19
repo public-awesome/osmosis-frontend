@@ -105,7 +105,7 @@ export class RootStore {
 			[
 				{
 					alternativeCoinId: 'osmosis',
-					poolId: '6',
+					poolId: '8',
 					spotPriceSourceDenom: 'uosmox',
 					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
 					destCoinId: 'pool:ustarx',
@@ -120,7 +120,7 @@ export class RootStore {
 
 		this.swapManager = new GammSwapManager([
 			{
-				poolId: '6',
+				poolId: '8',
 				currencies: [
 					{
 						coinMinimalDenom: 'uosmox',
