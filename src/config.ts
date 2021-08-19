@@ -142,7 +142,7 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 			coinMinimalDenom: 'ustarx',
 			coinDecimals: 6,
 			coinGeckoId: 'stars',
-			coinImageUrl: window.location.origin + '/public/assets/tokens/cosmos.svg',
+			coinImageUrl: window.location.origin + '/public/assets/tokens/stars.png',
 		},
 		bip44: {
 			coinType: 118,
@@ -154,7 +154,7 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 				coinMinimalDenom: 'ustarx',
 				coinDecimals: 6,
 				coinGeckoId: 'stars',
-				coinImageUrl: window.location.origin + '/public/assets/tokens/cosmos.svg',
+				coinImageUrl: window.location.origin + '/public/assets/tokens/stars.png',
 			},
 		],
 		feeCurrencies: [
@@ -163,7 +163,7 @@ export const EmbedChainInfos: ChainInfoWithExplorer[] = [
 				coinMinimalDenom: 'ustarx',
 				coinDecimals: 6,
 				coinGeckoId: 'stars',
-				coinImageUrl: window.location.origin + '/public/assets/tokens/cosmos.svg',
+				coinImageUrl: window.location.origin + '/public/assets/tokens/stars.png',
 			},
 		],
 		coinType: 118,
