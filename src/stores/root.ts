@@ -104,7 +104,7 @@ export class RootStore {
 			this.queriesStore.get(EmbedChainInfos[0].chainId).osmosis.queryGammPools,
 			[
 				{
-					alternativeCoinId: 'osmosis',
+					alternativeCoinId: 'uosmox',
 					poolId: '8',
 					spotPriceSourceDenom: 'uosmox',
 					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
