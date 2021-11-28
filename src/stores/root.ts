@@ -104,25 +104,11 @@ export class RootStore {
 			this.queriesStore.get(EmbedChainInfos[0].chainId).osmosis.queryGammPools,
 			[
 				{
-					alternativeCoinId: 'pool:uosmo',
-					poolId: '1',
-					spotPriceSourceDenom: 'uosmo',
-					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-					destCoinId: 'cosmos',
-				},
-				{
-					alternativeCoinId: 'pool:uion',
-					poolId: '2',
-					spotPriceSourceDenom: 'uion',
-					spotPriceDestDenom: 'uosmo',
-					destCoinId: 'pool:uosmo',
-				},
-				{
-					alternativeCoinId: 'pool:uregen',
-					poolId: '21',
-					spotPriceSourceDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-8' }], 'uregen'),
-					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-					destCoinId: 'cosmos',
+					alternativeCoinId: 'uosmox',
+					poolId: '8',
+					spotPriceSourceDenom: 'uosmox',
+					spotPriceDestDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
+					destCoinId: 'pool:ustarx',
 				},
 			]
 		);
@@ -134,196 +120,16 @@ export class RootStore {
 
 		this.swapManager = new GammSwapManager([
 			{
-				poolId: '1',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: 'uosmo',
-						coinDenom: 'OSMO',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '2',
-				currencies: [
-					{
-						coinMinimalDenom: 'uosmo',
-						coinDenom: 'OSMO',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: 'uion',
-						coinDenom: 'ION',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '3',
-				currencies: [
-					{
-						coinMinimalDenom: 'uosmo',
-						coinDenom: 'OSMO',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'uakt'),
-						coinDenom: 'AKT',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '4',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'uakt'),
-						coinDenom: 'AKT',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '5',
-				currencies: [
-					{
-						coinMinimalDenom: 'uosmo',
-						coinDenom: 'OSMO',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-2' }], 'udvpn'),
-						coinDenom: 'DVPN',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '6',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-2' }], 'udvpn'),
-						coinDenom: 'DVPN',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '7',
-				currencies: [
-					{
-						coinMinimalDenom: 'uosmo',
-						coinDenom: 'OSMO',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-6' }], 'uiris'),
-						coinDenom: 'IRIS',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
 				poolId: '8',
 				currencies: [
 					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
+						coinMinimalDenom: 'uosmox',
+						coinDenom: 'OSMOX',
 						coinDecimals: 6,
 					},
 					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-6' }], 'uiris'),
-						coinDenom: 'IRIS',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '9',
-				currencies: [
-					{
-						coinMinimalDenom: 'uosmo',
-						coinDenom: 'OSMO',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-5' }], 'basecro'),
-						coinDenom: 'CRO',
-						coinDecimals: 8,
-					},
-				],
-			},
-			{
-				poolId: '10',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-5' }], 'basecro'),
-						coinDenom: 'CRO',
-						coinDecimals: 8,
-					},
-				],
-			},
-			{
-				poolId: '13',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-4' }], 'uxprt'),
-						coinDenom: 'XPRT',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '22',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-8' }], 'uregen'),
-						coinDenom: 'REGEN',
-						coinDecimals: 6,
-					},
-				],
-			},
-			{
-				poolId: '183',
-				currencies: [
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-0' }], 'uatom'),
-						coinDenom: 'ATOM',
-						coinDecimals: 6,
-					},
-					{
-						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-15' }], 'uiov'),
-						coinDenom: 'IOV',
+						coinMinimalDenom: DenomHelper.ibcDenom([{ portId: 'transfer', channelId: 'channel-1' }], 'ustarx'),
+						coinDenom: 'STARX',
 						coinDecimals: 6,
 					},
 				],
